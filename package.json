@@ -2,16 +2,20 @@
   "name": "bulk-resize",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "cli",
   "dependencies": {
     "async": "2.0.1",
     "extend": "3.0.0",
+    "glob": "7.0.6",
     "imagemagick": "0.1.3",
-    "mathjs": "3.4.1"
+    "is-jpg": "1.0.0",
+    "mathjs": "3.4.1",
+    "read-chunk": "2.0.0",
+    "yargs": "5.0.0"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "bulk-resize": "cli.js"
   },
   "keywords": [],
   "author": "Stav Geffen <stavgeffen@gmail.com> (http://www.stav.io/)",
