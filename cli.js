@@ -24,8 +24,14 @@ const argv = require('yargs')
 	})
 
 	.option('t', {
-		alias: 'toSize',
+		alias: 'aimSize',
 		describe: 'Size to aim for when tinkering image quality.',
+		type: 'number'
+	})
+
+	.option('b', {
+		alias: 'bigger',
+		describe: 'Width for horizontal images and height for vertical images, of output file/s in pixels',
 		type: 'number'
 	})
 
