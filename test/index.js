@@ -12,4 +12,18 @@ describe('BulkResize', () => {
 
 	});
 
+	it('Should prompt if no images were found', () => {
+
+		const options = {
+			destination: process.cwd(),
+			source: process.cwd(),
+			bigger: 100
+		};
+
+		bulkResize(options).catch(err => {
+			assert(err.message.indexOf('No images found at') === 0);
+		});
+
+	});
+
 });
